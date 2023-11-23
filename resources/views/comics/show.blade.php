@@ -23,5 +23,5 @@
 @endsection
 
 @section('title')
-    | Homepage
+    | Descrizione
 @endsection
