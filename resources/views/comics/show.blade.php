@@ -9,10 +9,10 @@
                 <img src="{{ $comic->thumb}}" alt="{{ $comic->title}}">
                 <div class="card-body">
                     <p class="card-text">Prezzo: {{ $comic->price}}</p>
-                    <p class="card-text">Prezzo: {{ $comic->series}}</p>
-                    <p class="card-text">Prezzo: {{ $comic->sale_date}}</p>
-                    <p class="card-text">Prezzo: {{ $comic->type}}</p>
-                    <p class="card-text">Prezzo: {{ $comic->description}}</p>
+                    <p class="card-text">Serie: {{ $comic->series}}</p>
+                    <p class="card-text">Data Uscita: {{ $comic->sale_date}}</p>
+                    <p class="card-text">Tipo: {{ $comic->type}}</p>
+                    <p class="card-text">Descrizione: {{ $comic->description}}</p>
                 </div>
             </div>
         </div>
