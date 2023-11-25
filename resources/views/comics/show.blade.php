@@ -13,6 +13,12 @@
                     <p class="card-text">Data Uscita: {{ $comic->sale_date}}</p>
                     <p class="card-text">Tipo: {{ $comic->type}}</p>
                     <p class="card-text">Descrizione: {{ $comic->description}}</p>
+                    <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-warning">Modifica</a>
+                    <form class="d-inline-block " action="{{ route('comics.destroy', $comic)}}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger">Elimina</button>
+                    </form>
                 </div>
             </div>
         </div>

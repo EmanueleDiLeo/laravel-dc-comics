@@ -14,7 +14,11 @@
                             <p class="card-text">Prezzo: {{ $comic->price}}</p>
                             <a href="{{route('comics.show', $comic->id)}}" class="btn btn-primary">Più info</a>
                             <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-warning">Modifica</a>
-                            <a href="#" class="btn btn-danger">Elimina</a>
+                            <form class="d-inline-block " action="{{ route('comics.destroy', $comic)}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger">Elimina</button>
+                            </form>
                         </div>
                     </div>
                 </div>
